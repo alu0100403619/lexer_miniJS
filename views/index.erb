@@ -1,51 +1,51 @@
 <ul id="top_menu">
-<li style="background-color: #4f9351;"><a href="https://github.com/alu0100403619/lexer_miniJS.git"><img src="assets/github.png" width="21" height="21">Github</a></li>
-<li style="background-color: #6178ba; border-bottom-right-radius: 15px;"><a href="tests/index.html"><img src="assets/test.png" width="21" height="21">Test</a></li>
-  </ul>
+	<li style="background-color: #4f9351;"><a href="https://github.com/alu0100403619/lexer_miniJS.git"><img src="assets/github.png" width="21" height="21">Github</a></li>
+	<li style="background-color: #6178ba; border-bottom-right-radius: 15px;"><a href="tests/index.html"><img src="assets/test.png" width="21" height="21">Test</a></li>
+</ul>
   
-  <table class="contenido">
-    <tr class="center">
-<td><h1 class="titulo1">Top Down Operator Precedence. Lexical Analysis</h1></td>
-</tr>
-<tr>
-<td>
-<ul id="menu">
-          <li id="ejemplo1" onclick="dump('input1.txt');">Ejemplo1</li>
-          <li id="ejemplo2" onclick="dump('input2.txt');">Ejemplo2</li>
-          <li id="ejemplo3" onclick="dump('input3.txt');">Ejemplo3</li>
-        </ul>
-</td>
-</tr>
-<tr>
-<td class="contenido">
-<h2 class="titulo2">Input</h2>
-<p>Rellene el cuadro de texto con un bloque de código <i>javascript</i>.</p>
-<textarea id="INPUT" name="Code">
+<table class="contenido">
+	<tr class="center">
+		<td><h1 class="titulo1">Top Down Operator Precedence. Lexical Analysis</h1></td>
+	</tr>
+	<tr>
+		<td>
+			<ul id="menu">
+				<li id="ejemplo1" onclick="dump('input1.txt');">Ejemplo1</li>
+				<li id="ejemplo2" onclick="dump('input2.txt');">Ejemplo2</li>
+				<li id="ejemplo3" onclick="dump('input3.txt');">Ejemplo3</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="contenido">
+			<h2 class="titulo2">Input</h2>
+			<p>Rellene el cuadro de texto con un bloque de código <i>javascript</i>.</p>
+			<textarea id="INPUT" name="Code">
 var a = "hello"; // initialize a
 var b = function(x) {
-  var c = 3;
-  return x+c;
+   var c = 3;
+   return x+c;
 };
-        </textarea>
-<br>
-<input id="PARSE" value=Parse type=button>
-</td>
-</tr>
-<tr>
-<td class="contenido">
-<h2 class="titulo2">Tokens</h2>
-<pre id=OUTPUT>&lt;Sin parsear&gt;</pre>
-</td>
-</tr>
-  </table>
+			</textarea>
+			<br>
+			<input id="PARSE" value=Parse type=button>
+		</td>
+	</tr>
+	<tr>
+		<td class="contenido">
+			<h2 class="titulo2">Tokens</h2>
+			<pre id=OUTPUT>&lt;Sin parsear&gt;</pre>
+		</td>
+	</tr>
+</table>
   
-  <script>
+<script>
 
-    // Véase http://stackoverflow.com/questions/8378678/how-can-i-set-the-value-of-a-codemirror-editor-by-javascript
-    function dump(fileName) {
-      $.get(fileName, function (data) {
-        //$("#INPUT").val(data);
-editor.setValue(data);
-      });
-    };
-  </script> 
+	// Véase http://stackoverflow.com/questions/8378678/how-can-i-set-the-value-of-a-codemirror-editor-by-javascript
+	function dump(fileName) {
+		$.get(fileName, function (data) {
+			$("#INPUT").val(data);
+			//editor.setValue(data);
+		});
+	};
+</script> 
