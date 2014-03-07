@@ -41,11 +41,3 @@ var b = function(x) {
 		});
 	};
 </script> 
-
- <div style="display:inline">
-        <button id ="assignment" type="button" onclick="dump('inputs/assignment.txt');">Asignacion</button>
-        <button id ="expression"  type="button" onclick="dump('inputs/expression.txt');">Expresion</button>
-        <button id ="input1" type="button" onclick="dump('inputs/input1.txt');">Input 1</button>
-        <button id ="input2" type="button" onclick="dump('inputs/input2.txt');">Input 2</button>
-        <button id ="input3" type="button" onclick="dump('inputs/input3.txt');">Input 3</button>
-  </div>
